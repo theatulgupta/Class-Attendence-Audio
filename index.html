@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech Player</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .text-container {
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text to Speech Player</h1>
+
+    <div class="text-container">
+      <button onclick="speakText('This is a pen.', 'en-US')">Play English Text 1</button>
+      <button onclick="speakText('यह एक कलम है।', 'hi-IN')">Play Hindi Text 1</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('What is your name?', 'en-US')">Play English Text 2</button>
+      <button onclick="speakText('आपका नाम क्या है?', 'hi-IN')">Play Hindi Text 2</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('My name is John.', 'en-US')">Play English Text 3</button>
+      <button onclick="speakText('मेरा नाम जॉन है।', 'hi-IN')">Play Hindi Text 3</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('How are you?', 'en-US')">Play English Text 4</button>
+      <button onclick="speakText('आप कैसे हैं?', 'hi-IN')">Play Hindi Text 4</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('I am fine.', 'en-US')">Play English Text 5</button>
+      <button onclick="speakText('मैं ठीक हूँ।', 'hi-IN')">Play Hindi Text 5</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('What are you doing?', 'en-US')">Play English Text 6</button>
+      <button onclick="speakText('आप क्या कर रहे हैं?', 'hi-IN')">Play Hindi Text 6</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('I am studying.', 'en-US')">Play English Text 7</button>
+      <button onclick="speakText('मैं पढ़ाई कर रहा हूँ।', 'hi-IN')">Play Hindi Text 7</button>
+    </div>
+
+    <div class="text-container">
+      <button onclick="speakText('Where do you live?', 'en-US')">Play English Text 8</button>
+      <button onclick="speakText('आप कहाँ रहते हैं?', 'hi-IN')">Play Hindi Text 8</button>
+    </div>
+
+    <script>
+      function speakText(text, lang) {
+        const speech = new SpeechSynthesisUtterance();
+        speech.text = text;
+        speech.lang = lang;
+        speech.rate = 1; // You can adjust the speed of the voice here
+        window.speechSynthesis.speak(speech);
+      }
+    </script>
+  </body>
+</html>
