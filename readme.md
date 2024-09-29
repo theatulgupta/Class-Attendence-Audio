@@ -2,10 +2,10 @@
 
 ==========================
 
-[![License](https://img.shields.io/github/license/AyushGupta/Class-Attendance-Audio)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/AyushGupta/Class-Attendance-Audio?style=social)](https://github.com/AyushGupta/Class-Attendance-Audio/stargazers)
-[![Forks](https://img.shields.io/github/forks/AyushGupta/Class-Attendance-Audio?style=social)](https://github.com/AyushGupta/Class-Attendance-Audio/network/members)
-[![Issues](https://img.shields.io/github/issues/AyushGupta/Class-Attendance-Audio)](https://github.com/AyushGupta/Class-Attendance-Audio/issues)
+[![License](https://img.shields.io/github/license/theatulgupta/Class-Attendance-Audio)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/theatulgupta/Class-Attendance-Audio?style=social)](https://github.com/theatulgupta/Class-Attendance-Audio/stargazers)
+[![Forks](https://img.shields.io/github/forks/theatulgupta/Class-Attendance-Audio?style=social)](https://github.com/theatulgupta/Class-Attendence-Audio/network/members)
+[![Issues](https://img.shields.io/github/issues/theatulgupta/Class-Attendance-Audio)](https://github.com/theatulgupta/Class-Attendance-Audio/issues)
 
 ## About
 
@@ -27,7 +27,7 @@ Class Attendance Audio is a Streamlit web application that generates audio annou
 
 ---
 
-You can try out the live demo of the application here: [Class Attendance Audio Demo](https://share.streamlit.io/AyushGupta/Class-Attendance-Audio/main/app.py)
+You can try out the live demo of the application here: [Class Attendance Audio Demo](https://ayushgupta-attendence.streamlit.app/)
 
 ## Installation
 
@@ -45,7 +45,7 @@ To run the application locally, follow these steps:
 ### Clone and Run
 
 ```bash
-git clone https://github.com/AyushGupta/Class-Attendance-Audio.git
+git clone https://github.com/theatulgupta/Class-Attendance-Audio.git
 cd Class-Attendance-Audio
 pip install -r requirements.txt
 streamlit run app.py
